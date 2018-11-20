@@ -1,72 +1,64 @@
-<?php include("config.php"); ?>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SMK Tenang Rindu</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <style type="text/css">
-    body {
-      padding-top: 70px;
-      background: #eeeeee;
-    }
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    .container-body {
-      background: #ffffff;
-      box-shadow: 1px 1px 1px #999;
-      padding: 20px;
-    }
-  </style>
+    <style>
+      section {
+      min-height; 420px }
+    </style>
 
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head>
-<body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+    <title>SMK Tentang Rindu </title>
+  </head>
+  <body class="mt-5">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class= "container">
+          <a class="navbar-brand" href="Home.html">
+             <img src="Logo.png" width="30px" class="rounded-circle img-thumbnail mr-2" > SMK Tentang Rindu
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-itemmr-3">
+                <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="Profile.html">Profile</a>
+              </li>
+              <li class="nav-item dropdown mr-3">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ekstrakulikuler</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="Futsal.html">Futsal</a>
+                        <a class="dropdown-item" href="Musik.html">Musik</a>
+                        <a class="dropdown-item" href="Pramuka.html">Pramuka</a>
+              <li class="nav-item mr-3">
+                <a class="nav-link disabled" href="Tendik.html">Tenaga Pendidik</a>
+              </li>
+            </ul>
+            
+              
+          </div>
       </div>
+        </nav>
 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="index.php">Home</a></li>
-          <li><a href="upload.php">Upload</a></li>
-          <li><a href="download.php">Download</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <?php
-          if($_SESSION['user']){
-            echo '<li><a href="profile.php">Profile</a></li>';
-            echo '<li><a href="logout.php" onclick="return confirm(\'Yakin?\')">Logout</a></li>';
-          }else{
-            echo '<li><a href="login.php">Login</a></li>';
-          }
-          ?>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container container-body">
-    <h1>Register</h1>
-    <hr>
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
+<div class="container container-body">
+        <div class="row pt-4 mb-4">
+            <div class="col text-center">
+                <h1>REGISTER</h1>
+            </div>
+        </div>
 
         <?php
         if($_POST['register']){
+          $conn = new mysqli("localhost", "root", "", "bootstrap");
           $nama   = $conn->real_escape_string($_POST['nama']);
           $email  = $conn->real_escape_string($_POST['email']);
           $user   = $conn->real_escape_string($_POST['username']);
@@ -76,7 +68,7 @@
           if(strlen($pass) >= 5){
             if($pass == $pass2){
               $password = md5($pass);
-              $insert = $conn->query("INSERT INTO user(tgl_daftar, nama, email, username, password) VALUES('$tgl', '$nama', '$email', '$user', '$password')");
+              $insert = $conn->query("INSERT INTO user(tgl_daftar, nama, username, password) VALUES('$tgl', '$nama', '$user', '$password')");
               if($insert){
                 echo '<div class="alert alert-success">Register berhasil, silahkan <a href="login.php">Login</a>.</div>';
               }else{
@@ -90,46 +82,40 @@
           }
         }
         ?>
+
         <form class="form-horizontal" method="post">
           <div class="form-group">
             <label class="col-md-4 control-label">Nama Lengkap</label>
-            <div class="col-md-8">
-              <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" required="required">
-            </div>
+              <input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" >
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">Email</label>
-            <div class="col-md-8">
-              <input type="email" name="email" class="form-control" placeholder="email@domain.com" required="required">
-            </div>
+              <input type="email" name="email" class="form-control" placeholder="email@domain.com">
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">Username</label>
-            <div class="col-md-8">
-              <input type="text" name="username" class="form-control" placeholder="username" required="required">
-            </div>
+              <input type="text" name="username" class="form-control" placeholder="username" >
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">Password</label>
-            <div class="col-md-8">
-              <input type="password" name="password" class="form-control" placeholder="password" required="required">
-            </div>
+              <input type="password" name="password" class="form-control" placeholder="password">
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">Ulangi Password</label>
-            <div class="col-md-8">
-              <input type="password" name="password2" class="form-control" placeholder="ulangi password" required="required">
-            </div>
+              <input type="password" name="password2" class="form-control" placeholder="ulangi password" >
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">&nbsp;</label>
-            <div class="col-md-8">
               <input type="submit" name="register" class="btn btn-primary" value="Register">
-            </div>
           </div>
+
           <div class="form-group">
             <label class="col-md-4 control-label">&nbsp;</label>
-            <div class="col-md-8">
               Sudah punya akun? <a href="login.php">Login</a>
             </div>
           </div>
@@ -139,7 +125,14 @@
     <hr>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-</body>
-</html>
+</section>
+<?php
+    /* handle error */
+    if (isset($_GET['error'])) : ?>
+        <div class="alert alert-warning mt-5" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
+        </div>
+    <?php endif;?>
