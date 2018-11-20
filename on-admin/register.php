@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website Upload dan Download</title>
+  <title>SMK </title>
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <style type="text/css">
@@ -46,14 +46,6 @@
           <li><a href="download.php">Download</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <?php
-          if($_SESSION['user']){
-            echo '<li><a href="profile.php">Profile</a></li>';
-            echo '<li><a href="logout.php" onclick="return confirm(\'Yakin?\')">Logout</a></li>';
-          }else{
-            echo '<li><a href="login.php">Login</a></li>';
-          }
-          ?>
         </ul>
       </div>
     </div>
