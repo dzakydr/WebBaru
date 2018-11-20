@@ -74,9 +74,15 @@
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
-                
                 <input type="submit" class="btn btn-block btn-custom-green" value="LOGIN" />
             </form>
+
+            <div class="form-group text-center">
+                    <label class="col-md-4 control-label">&nbsp;</label>
+                    <div class="col">
+                    Belum punya akun? <a href="register.php">Register</a>
+                    </div>
+                </div>
         </div>
     </div>
 </section>
