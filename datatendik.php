@@ -42,7 +42,7 @@
                       <a class="dropdown-item" href="EC.html">English Club</a>
                       <a class="dropdown-item" href="Silat.html">Pencak Silat</a>
             <li class="nav-item active mr-3">
-              <a class="nav-link" href="Tendik.html">Tenaga Pendidik</a>
+              <a class="nav-link" href="datatendik.php">Tenaga Pendidik</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 mr-3">
