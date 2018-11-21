@@ -56,15 +56,27 @@
   </nav>
 
   <div class="container container-body">
-    <h1>Selamat datang!</h1>
+    <h1>Profile</h1>
     <hr>
-    <p>Hai para siswa/i SMA TENTANG RINDU.</p>
-    <p>Tujuan dari web materi ini adalah untuk bahan belajar bagi siswa/i SMA TENTANG RINDU agar semakin memahami materi yang dipelajari selama sekolah.
-    <p>Lanjut saya jelaskan alur bagaimana aplikasi ini berjalan.</p>
-    <ol>
-      <li>karena hak aksesnya di batasi hanya untuk user yang sudah terdaftar , maka siswa/i yang ingin mendownload materi harus melakukan registrasi. silahkan klik menu <b>Login</b> di atas bagian kanan kemudian klik <b>Register</b> untuk daftar.</li>
-      <li>Masukkan data Register para siswa/i SMA TENTANG RINDU, dan setelah Register selesai, silahkan Login dengan username dan password yang sudah di daftarkan tadi.</li>
-      <li>Setelah berhasil Login, siswa/i SMA TENTANG RINDU bisa mencoba Download materi secara GRATIS.</li>
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <?php
+        $sql = $conn->query("SELECT * FROM users WHERE username='{$_SESSION['user']}'");
+        $data = $sql->fetch_assoc();
+        ?>
+        <table class="table">
+          <tr>
+            <th>USERNAME</th><th>:</th><td><?php echo $data['username']; ?></td>
+          </tr>
+          <tr>
+            <th>TGL. DAFTAR</th><th>:</th><td><?php echo $data['tgl_daftar']; ?></td>
+          </tr>
+          <tr>
+            <th>NAMA LENGKAP</th><th>:</th><td><?php echo $data['nama']; ?></td>
+          </tr>     
+        </table>
+      </div>
+    </div>
     <hr>
   </div>
 

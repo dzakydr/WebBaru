@@ -7,6 +7,7 @@ if (isset($_POST['nickname']) && $_POST['nickname']) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $repassword = $_POST['repassword'];
+    $tgl    = date("Y-m-d");
 
     // cek nilai variable
     if (empty($nama)) {
@@ -26,7 +27,7 @@ if (isset($_POST['nickname']) && $_POST['nickname']) {
     $password = md5($password);
     $level = 'member'; // default, 
     // SQL Insert
-    $sql = "INSERT INTO users (nama, username, password, level_user) VALUES ('$nama', '$username', '$password', '$level')";
+    $sql = "INSERT INTO users (nama, username, password, level_user , tgl_daftar) VALUES ('$nama', '$username', '$password', '$level' , '$tgl')";
     $insert = $dbconnect->query($sql);
     // jika gagal
     if (! $insert) {
