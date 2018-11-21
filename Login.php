@@ -40,7 +40,7 @@
                         <a class="dropdown-item" href="Musik.html">Musik</a>
                         <a class="dropdown-item" href="Pramuka.html">Pramuka</a>
               <li class="nav-item mr-3">
-                <a class="nav-link disabled" href="Tendik.html">Tenaga Pendidik</a>
+                <a class="nav-link disabled" href="datatendik.php">Tenaga Pendidik</a>
               </li>
             </ul>
             
