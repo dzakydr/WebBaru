@@ -99,7 +99,7 @@
             <td>'.$row['file_name'].'</td>
             <td>'.bytesToSize($row['file_size']).'</td>
             <td>'.$row['file_type'].'</td>
-            <td><a href="uploads/'.$row['file_name'].'" class="btn btn-primary btn-sm">Download</a></td>
+            <td><a href="../on-admin/uploads/'.$row['file_name'].'" class="btn btn-primary btn-sm">Download</a></td>
           </tr>
           ';
           $no++;
