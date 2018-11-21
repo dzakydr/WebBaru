@@ -41,6 +41,9 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
+        <a class="navbar-brand" href="../Home.html">
+           SMK Tentang Rindu
+          </a>
           <li><a href="index.php">Home</a></li>
           <li><a href="upload.php">Upload</a></li>
           <li class="active"><a href="download.php">Download</a></li>
