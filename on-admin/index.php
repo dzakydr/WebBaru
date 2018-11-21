@@ -65,7 +65,7 @@
     <hr>
   </div>
 
-  <footer class="bg-dark text-light mb-4">
+  <footer>
   <div class="container">
     <div class="row">
       <div class="col text-center mt-2">
