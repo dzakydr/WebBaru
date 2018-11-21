@@ -20,7 +20,7 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
           <div class= "container">
           <a class="navbar-brand" href="Home.html">
-             <img src="Logo.png" width="30px" class="rounded-circle img-thumbnail mr-2" > SMK Tentang Rindu
+             <img src="gambar/Logo.png" width="30px" class="rounded-circle img-thumbnail mr-2" > SMK Tentang Rindu
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
