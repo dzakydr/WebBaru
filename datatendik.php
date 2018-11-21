@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -68,6 +67,53 @@
           <p class="lead" >Smart, Friendly and Forest School</p>
         </div>
       </div>
+
+      <section id="tendik" class="tendik">
+        <div class="container">
+              <div class="row">
+                  <div class="col text-center mb-4">
+                    <h1> Tenaga Pendidik </h1>
+                    <div align="center">
+                    <?php
+                    define('DBHOST', 'localhost');
+                    define('DBUSER', 'root');
+                    define('DBPASS', '');
+                    define('DBNAME', 'bootstrap');
+                    $dbconnect = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+                    ?>
+
+                    <table border="3" width="650">
+                        <thead>
+                            <tr>
+                                <th>NIP</th>
+                                <th>Nama</th>
+                                <th>Golongan</th>
+                                <th>Jabatan</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                    <?php
+                        $ambildata=mysqli_query($dbconnect, "SELECT * FROM datatu");
+                        while($a=mysqli_fetch_array($ambildata)){
+                    ?>
+                        <tr>
+                            <td><?php echo $a['NIP'];?></td>
+                            <td><?php echo $a['NAMA'];?></td>
+                            <td><?php echo $a['GOLONGAN'];?></td>
+                            <td><?php echo $a['JABATAN'];?></td>
+                        </tr>
+                    <?php
+                        }
+                    ?>
+                        </tbody>
+                    </table>
+                    </div>
+                    </div>
+              </div> 
+        </div>
+      </section>
+      
 
 
 <footer class="bg-dark text-light mb-4">
