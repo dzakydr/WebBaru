@@ -117,8 +117,10 @@
               </div> 
         </div>
       </section>
-      
-
+     
+      <div class="col text-center mb-4">
+  <img src="gambar/struktur.png" class="mt-4">
+</div>
 
 <footer class="bg-dark text-light mb-4">
   <div class="container">
