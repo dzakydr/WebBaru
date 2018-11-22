@@ -77,7 +77,7 @@
                 <div class="form-group">
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
-                <input type="submit" class="btn btn-block btn-custom-green" value="LOGIN" />
+                <input type="submit" class="btn btn-block btn-custom-green" value="LOG IN" />
             </form>
 
             <div class="form-group text-center">
