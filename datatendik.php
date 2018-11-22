@@ -64,7 +64,7 @@
         <div class="container text-center">
             <img src="gambar/Logo.png" width="25%" class="rounded-circle img-thumbnail" >
           <h1 class="display-4"  >SMK Tentang Rindu</h1>
-          <p class="lead" >Smart, Friendly and Forest School</p>
+          <p class="lead" >Success, Reputation, Prestige</p>
         </div>
       </div>
 
