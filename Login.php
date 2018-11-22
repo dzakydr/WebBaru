@@ -59,11 +59,11 @@
     <div class="container">
         <div class="row pt-4 mb-4">
             <div class="col text-center">
-                <h1>LOGIN</h1>
+                <h1>LOG IN</h1>
             </div>
         </div>
 
-    <div class="alert alert-danger"> Anda harus login dahulu seblum mendownload materi !!!</div>    
+    <div class="alert alert-danger"> Anda harus log in dahulu seblum mendownload materi !!!</div>    
     <div class="outter-form-login">
         <div class="logo-login">
             <em class="glyphicon glyphicon-user"></em>
