@@ -1,4 +1,3 @@
-<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +43,7 @@
         <a class="navbar-brand" href="../Home.html">
            SMK Tentang Rindu
           </a>
-          <li class="active"><a href="index.php">Home</a></li>
+          <li class=><a href="index.php">Home</a></li>
           <li><a href="download.php">Download</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
@@ -54,48 +53,27 @@
     </div>
   </nav>
 
-<div class="container container-body">
-    <h1>Profile</h1>
-    <hr>
-    <div class="row">
-      <div class="col-md-4 col-md-offset-4">
-        <?php
-        $sql = $conn->query("SELECT * FROM users WHERE nama='{$_SESSION['nama']}'");
-        $data = $sql->fetch_assoc();
-        ?>
-        <table class="table">
-          <tr>
-            <th>USERNAME</th><th>:</th><td><?php echo $data['username']; ?></td>
-          </tr>
-          <tr>
-            <th>TGL. DAFTAR</th><th>:</th><td><?php echo $data['tgl_daftar']; ?></td>
-          </tr>
-          <tr>
-            <th>NAMA LENGKAP</th><th>:</th><td><?php echo $data['nama']; ?></td>
-          </tr>     
-        </table>
-      </div>
-    </div>
-    <hr>
-    <div>
-      <label class="col-md-4 control-label">&nbsp;</label>
-        <div class="col text-center">
-        <a href="update.php">Update Profil</a>
-        </div>
-    </div>
-  </div>
 
-  
+<div class="container">
+    <form action="send_update.php" class="inner-login" method="post" enctype="multipart/form">
+            <h3 class="text-center title-login">Update Profil</h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="nickname" placeholder="Nama">
+                </div>
+
+                <div class="form-group">
+                    <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+
+                <input type="submit" class="btn btn-block btn-custom-green" value="Update" />
+                
+                <div class="text-center forget">
+                    <p>Back To <a href="./index.php">Home</a></p>
+                </div>
+            </form>
+</div>
+
  
-<footer class="bg-dark text-light mb-4">
-  <div class="container">
-    <div class="row">
-      <div class="col text-center mt-2">
-        <p>SMK Tentang Rindu</p>
-      </div>
-    </div>
-  </div>
-</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
