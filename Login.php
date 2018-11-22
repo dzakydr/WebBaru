@@ -39,8 +39,11 @@
                         <a class="dropdown-item" href="Futsal.html">Futsal</a>
                         <a class="dropdown-item" href="Musik.html">Musik</a>
                         <a class="dropdown-item" href="Pramuka.html">Pramuka</a>
+                        <a class="dropdown-item" href="Basket.html">Basket</a>
+                        <a class="dropdown-item" href="EC.html">English Club</a>
+                        <a class="dropdown-item" href="Silat.html">Pencak Silat</a>
               <li class="nav-item mr-3">
-                <a class="nav-link disabled" href="datatendik.php">Tenaga Pendidik</a>
+                <a class="nav-link" href="datatendik.php">Tenaga Pendidik</a>
               </li>
             </ul>
             
@@ -96,3 +99,5 @@
           <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
         </div>
     <?php endif;?>
+
+    </html>
