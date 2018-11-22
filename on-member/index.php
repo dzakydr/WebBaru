@@ -60,7 +60,7 @@
     <div class="row">
       <div class="col-md-4 col-md-offset-4">
         <?php
-        $sql = $conn->query("SELECT * FROM users WHERE username='{$_SESSION['user']}'");
+        $sql = $conn->query("SELECT * FROM users WHERE nama='{$_SESSION['nama']}'");
         $data = $sql->fetch_assoc();
         ?>
         <table class="table">
