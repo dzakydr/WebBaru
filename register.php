@@ -34,13 +34,16 @@
                 <a class="nav-link" href="Profile.html">Profile</a>
               </li>
               <li class="nav-item dropdown mr-3">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ekstrakulikuler</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="Futsal.html">Futsal</a>
-                        <a class="dropdown-item" href="Musik.html">Musik</a>
-                        <a class="dropdown-item" href="Pramuka.html">Pramuka</a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ekstrakulikuler</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="Futsal.html">Futsal</a>
+                      <a class="dropdown-item" href="Musik.html">Musik</a>
+                      <a class="dropdown-item" href="Pramuka.html">Pramuka</a>
+                      <a class="dropdown-item" href="Basket.html">Basket</a>
+                      <a class="dropdown-item" href="EC.html">English Club</a>
+                      <a class="dropdown-item" href="Silat.html">Pencak Silat</a>
               <li class="nav-item mr-3">
-                <a class="nav-link disabled" href="Tendik.html">Tenaga Pendidik</a>
+                <a class="nav-link " href="datatendik.php">Tenaga Pendidik</a>
               </li>
             </ul>
             
@@ -81,7 +84,7 @@
                 <input type="submit" class="btn btn-block btn-custom-green" value="REGISTER" />
                 
                 <div class="text-center forget">
-                    <p>Back To <a href="./login.php">Login</a></p>
+                    <p>Back To <a href="./Login.php">Login</a></p>
                 </div>
             </form>
         </div>
@@ -97,3 +100,4 @@
           <strong>Warning!</strong> <?=base64_decode($_GET['error']);?>
         </div>
     <?php endif;?>
+</html>
