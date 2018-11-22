@@ -21,13 +21,13 @@
     }
   </style>
 
-<title>SMK Tentang Rindu </title>
+<title>SMA Tentang Rindu </title>
 </head>
 <body class="mt-5">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <div class= "container">
                 <a class="navbar-brand" href="Home.html">
-                   <img src="gambar/Logo.png" width="30px" class="rounded-circle img-thumbnail mr-2" > SMK Tentang Rindu
+                   <img src="gambar/Logo.png" width="30px" class="rounded-circle img-thumbnail mr-2" > SMA Tentang Rindu
                 </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -71,7 +71,7 @@
       <div class="jumbotron jumbotron-fluid">
         <div class="container text-center">
             <img src="gambar/Logo.png" width="25%" class="rounded-circle img-thumbnail" >
-          <h1 class="display-4"  >SMK Tentang Rindu</h1>
+          <h1 class="display-4"  >SMA Tentang Rindu</h1>
           <p class="lead" >Success, Reputation, Prestige</p>
         </div>
       </div>
@@ -128,7 +128,7 @@
   <div class="container">
     <div class="row">
       <div class="col text-center mt-2">
-        <p>SMK Tentang Rindu</p>
+        <p>Copyright © 2018 smarindu.sch.id. All rights reserved.</p>
       </div>
     </div>
   </div>
