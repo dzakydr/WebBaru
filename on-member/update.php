@@ -65,7 +65,7 @@
                     <input type="password" class="form-control" name="password" placeholder="Password">
                 </div>
 
-                <input type="submit" class="btn btn-block btn-custom-green" value="Update" />
+                <input type="submit" class="btn btn-block btn-custom-primary bg-dark" value="UPDATE" />
                 
                 <div class="text-center forget">
                     <p>Back To <a href="./index.php">Home</a></p>
