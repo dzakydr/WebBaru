@@ -33,7 +33,7 @@ if (isset($_POST['nickname']) && $_POST['nickname']) {
     if (! $insert) {
         echo "<script>alert('".$dbconnect->error."'); window.location.href = './register.php';</script>";
     } else {
-        echo "<script>alert('Insert Data Berhasil'); window.location.href = './login.php';</script>";
+        echo "<script>alert('Register Berhasil!'); window.location.href = './login.php';</script>";
     }
 }
 ?>
