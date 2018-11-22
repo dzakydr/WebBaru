@@ -12,6 +12,14 @@
       min-height; 420px }
     </style>
 
+<style>
+    .jumbotron {
+  
+      background-image: url(gambar/background.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
 
 <title>SMK Tentang Rindu </title>
 </head>
